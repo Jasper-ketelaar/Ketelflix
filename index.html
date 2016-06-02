@@ -23,24 +23,33 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Ketelflix</a>
+        </div>
+
+        <div class="navbar-collapse">
             <div class="navbar-left">
-                <div class="navbar-text">
-                    <b>Ketelflix</b>
-                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home">Home</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Movies</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right navbar-text">
+                Logged in as Jasper Ketelaar
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-
-
     </div>
+</nav>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.js"></script>
+<div class="container" id="content"></div>
 
-    <script src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ketelflix.js"></script>
 </body>
 </html>
