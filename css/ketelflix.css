@@ -1,5 +1,175 @@
-h1 {
-    color: cornflowerblue;
-    font-size: 14px;
+/* CSS for navbar */
+nav.navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+nav.navbar .navbar-header .navbar-brand {
+    color: deepskyblue;
     font-weight: bold;
 }
+
+nav.navbar .navbar-header .navbar-brand:hover {
+    opacity: 0.8;
+}
+
+nav.navbar button {
+    margin: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+/* JUMBOTRON STYLING */
+.jumbotron {
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron .container {
+    max-width: 100%;
+}
+
+.jumbotron .container > h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 35px;
+}
+
+.jumbotron .container > p {
+    font-weight: 200;
+    text-align: left;
+    width: 75%;
+    margin: 25px auto;
+    font-size: 25px;
+
+}
+
+.jumbotron form {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.container .panel {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .panel .panel-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .panel .panel-body {
+    width: 90%;
+    margin: 5px auto;
+}
+
+.container .panel .thumbnail {
+    width: 75%;
+}
+
+.container .panel .thumbnail:hover {
+    opacity: 0.8;
+}
+
+.container .panel .thumbnail img {
+    width: 100%;
+}
+
+.container .panel .thumbnail .caption {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.container .panel .thumbnail h1 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.jumbotron .row {
+    margin-bottom: 50px;
+}
+
+.jumbotron .thumbnails {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron .thumbnails img:hover {
+    opacity: 0.8;
+}
+
+.jumbotron .row.search {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron .dropdown {
+    margin-left: 10%;
+}
+
+.jumbotron .dropdown span {
+    margin-left: 30%
+}
+
+.jumbotron .dropdown button {
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.episodes {
+    position: relative;
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.episodes .episode {
+    box-sizing: content-box;
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.episodes .episode:hover {
+    opacity: 0.8;
+}
+
+.episodes .episode h2 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    left: 70%;
+    top: 0;
+}
+
+.episodes .episode img {
+    width: 100%;
+}
+
+
+
+

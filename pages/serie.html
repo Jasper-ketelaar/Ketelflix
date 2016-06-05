@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ketelflix</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="../css/ketelflix.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Ketelflix</a>
+        </div>
+
+        <div class="navbar-collapse">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="series.html">Series</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>{{name}}</h1>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Season 1
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Season 2</a></li>
+                    <li><a href="#">Season 3</a></li>
+                    <li><a href="#">Season 4</a></li>
+                    <li><a href="#">Season 5</a></li>
+                    <li><a href="#">Season 6</a></li>
+                </ul>
+            </div>
+            <div class="episodes">
+                {{#each episodes}}
+                <div class="episode">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w300/{{this.still_path}}">
+                    </a>
+                    <h2>Ep. {{this.episode_number}}</h2>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
