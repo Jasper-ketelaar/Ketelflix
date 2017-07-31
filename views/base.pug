@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    link(href="/css/normalize.css" rel="stylesheet" type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css")
+    link(href="/css/main.css" rel="stylesheet" type="text/css")
+    link(href="/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Movie/TV website for Ketelaars')
+    meta(name='author', content='Jasper Ketelaar')
+    title Ketelflix
+
+    nav
+      a(href="/").logo Ketelflix
+      ul
+        a(href="/movies")
+          li 
+            i.fa.fa-film
+            span MOVIES 
+        a(href="/tv")
+          li
+            i.fa.fa-television
+            span TV SERIES
+
+        li
+          .search
+            a(id="searchbtn" href="javascript:void(0)")
+              i.fa.fa-search
+              span SEARCH
+            .searchbox
+              i.fa.fa-search
+              input(type="search" placeholder="Search" id="search")
+
+      a(href="/login").right 
+        i.fa.fa-sign-in
+        span LOGIN
+
+      a(href="/request").right
+        i.fa.fa-question-circle
+        span REQUEST
+
+  body
+    block content
+    script(type="text/javascript" src="/js/jquery.js")
+    script(type="text/javascript" src="/js/main.js")
