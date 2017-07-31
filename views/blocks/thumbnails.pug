@@ -1,0 +1,24 @@
+extends ../base.pug
+block content
+  .header
+    h1 
+      if message
+        |#{message}
+      else if type === "movie"
+        |The top #{data.length} movies out right now.
+      else
+        |The top #{data.length} series trending right now.
+    p 
+      if type === "movie"
+        |To find other movies use the search function on the 
+        |navigation bar.
+      else if !message
+        |To find other series use the search function on the 
+        |navigation bar.
+  .thumbnails
+    each val in data
+      if val.title
+        a(href= (val.type === 'movie' ? "/movies/" : "/series/") + val.imdbid).thumbnail
+          img(src= (val.poster === 'N/A' ? "/img/nopicture.gif" : val.poster))
+          span 
+            h2 #{val.title}

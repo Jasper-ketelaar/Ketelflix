@@ -1,0 +1,27 @@
+extends ../base.pug
+block content
+  .video
+    .thumbnail
+      img(src=data.poster)
+    .video-information 
+      .video-attributes
+        .right-block
+          .genre= data.genres
+          .rating= data.rating
+            span  /10
+          .length= data.runtime
+        .title= data.title.toUpperCase()
+          .tooltip
+            i.fa.fa-info-circle
+            .description= data.plot
+        .year= data.year  
+      hr
+      if data.movie
+        video(controls)
+          source(src=data.movie type=data.type)
+      else
+        h2(style="margin-top:5em; text-align:center;") Movie not in Ketelflix database
+        p(style="text-align:center;")
+          |Do you wish to download this movie to the Ketelflix database?
+          br
+          a(href="../" style="color:lightblue") Click here
